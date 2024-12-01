@@ -9,12 +9,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="keywords" content="intense web design multipurpose template">
     <meta name="date" content="Dec 26">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Content Security Policy (CSP) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://pos.baidu.com; connect-src 'self' https://www.google-analytics.com; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+    
+    <!-- HSTS (HTTP Strict Transport Security) -->
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    
+    <!-- X-Frame-Options: Prevent Clickjacking -->
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    
+    <!-- XSS Protection -->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <!-- Referrer Policy -->
+    <meta name="referrer" content="no-referrer">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/about-us-1.png" type="image/x-icon">
+    
+    <!-- Google Fonts -->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,700%7CMerriweather:400,300,300italic,400italic,700,700italic">
+    
+    <!-- External Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/novi.css">
-    <!--[if lt IE 10]><div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div><script src="js/html5shiv.min.js"></script><![endif]-->
+
+    <!-- Prevent Old Browsers from Running -->
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;">
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.">
+        </a>
+    </div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
 </head>
+
 
 <body>
     <div class="page-loader">
@@ -26,14 +57,14 @@
                 <nav class="rd-navbar novi-background rd-navbar-center" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="220px" data-xl-stick-up-offset="220px" data-xxl-stick-up-offset="220px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
                     <div class="rd-navbar-inner">
                         <div class="rd-navbar-panel"><button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
-                            <h4 class="panel-title">Patshala</h4><button class="rd-navbar-top-panel-toggle" data-rd-navbar-toggle=".rd-navbar-top-panel"><span></span></button>
+                            <h4 class="panel-title">CTM</h4><button class="rd-navbar-top-panel-toggle" data-rd-navbar-toggle=".rd-navbar-top-panel"><span></span></button>
                             <div class="rd-navbar-top-panel">
                                 <div class="shell">
                                     <div class="range range-10 range-md-center range-md-middle range-lg-around">
                                         <div class="cell-md-3">
                                             <div class="unit unit-horizontal unit-top unit-spacing-xs">
                                                 <div class="unit-left"><span class="icon novi-icon mdi mdi-phone text-middle"></span></div>
-                                                <div class="unit-body"><a class="reveal-block" href="tel:#">1-800-1234-567,</a><a href="tel:#">1-800-6547-321</a></div>
+                                                <div class="unit-body"><a class="reveal-block" href="tel:+852 2461 0304">+852 2461 0304,</a><a href="tel:+852 2461 0304">+852 2461 0304</a></div>
                                             </div>
                                         </div>
                                         <div class="cell-md-3 text-center">
@@ -43,7 +74,7 @@
                                             <div class="inset-md-left-50">
                                                 <div class="unit unit-horizontal unit-top unit-spacing-xs text-left">
                                                     <div class="unit-left"><span class="icon novi-icon mdi mdi-map-marker text-middle"></span></div>
-                                                    <div class="unit-body"><a href="#">2130 Fulton Street San Diego, CA 94117-1080 USA</a></div>
+                                                    <div class="unit-body"><a href="#">3 Wong Yin Street, Tuen Mun, N.T., Hong Kong</a></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -64,17 +95,13 @@
                                                 <li><a href="history.html">History</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="course-grid.html">Course</a>
-                                            <ul class="rd-navbar-dropdown">
+                                        <li class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="course-grid.html">Course</a>
+                                            <ul class="rd-navbar-dropdown rd-navbar-open-right" style="">
                                                 <li><a href="course-grid.html">Course Page</a></li>
                                                 <li><a href="course-details.html">Course Details Page</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="events.html">Events</a>
-                                            <ul class="rd-navbar-dropdown">
-                                                <li><a href="event-page.html">Event Details Page</a></li>
-                                            </ul>
-                                        </li>
+                                        
                                         <li><a href="#">Pages</a>
                                             <ul class="rd-navbar-dropdown">
                                                 <li><a href="team.html">Lecturer</a></li>
@@ -86,13 +113,14 @@
                                                 <li><a href="team-member-profile.html">Team Member Profile</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">News</a>
-                                            <ul class="rd-navbar-dropdown">
+                                        <li class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="#">News</a>
+                                            <ul class="rd-navbar-dropdown rd-navbar-open-right" style="">
                                                 <li><a href="grid-news.html">Grid News</a></li>
                                                 <li><a href="news-post-page.html">News Post Page</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contacts.html">Contacts</a></li>
+                                        <li><a href="https://eclass.tmmarden.edu.hk/templates/">EClass</a></li>
                                     </ul>
                                     <div class="rd-navbar-search-mobile" id="rd-navbar-search-mobile">
                                         <form class="rd-navbar-search-form search-form-icon-right rd-search" action="search-results.html" method="GET">
